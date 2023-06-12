@@ -50,9 +50,3 @@ export const App = () => {
     </Routes>
   );
 };
-
-{
-  /* <div className={css.container}>
-        <PhoneBook />
-      </div> */
-}
