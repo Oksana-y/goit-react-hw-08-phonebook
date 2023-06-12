@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import css from './contact-form.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactThunk } from 'redux/operations';
+import { addContactThunk } from 'redux/contacts/operations';
 
 const ContactForm = () => {
   const dispatch = useDispatch();

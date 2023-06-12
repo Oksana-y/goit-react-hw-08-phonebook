@@ -9,6 +9,7 @@ import { Layout } from './Layout/Layout';
 import { refreshThunk } from 'redux/auth/authOperations';
 import { PrivateRoute } from 'hoc/PrivateRoute';
 import { PublicRoute } from '../hoc/PublicRoute';
+import { NotFound } from '../pages/NotFound/NotFound';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ export const App = () => {
 
   return (
     <Routes>
+      <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route

@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { PhoneBookReducer } from './slice';
+import { PhoneBookReducer } from './contacts/slice';
 import { authReducer } from './auth/authSlice';
 
 import {
@@ -13,7 +13,6 @@ import {
   persistReducer,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-
 
 const persistConfig = {
   key: 'token',

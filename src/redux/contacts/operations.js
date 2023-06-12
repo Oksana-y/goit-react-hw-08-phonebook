@@ -1,4 +1,4 @@
-import { instance } from '../services/ApiConfig';
+import { instance } from '../../services/ApiConfig';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchContactsThunk = createAsyncThunk(

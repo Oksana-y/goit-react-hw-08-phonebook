@@ -1,4 +1,4 @@
-import { filterAllContacts } from 'redux/slice';
+import { filterAllContacts } from 'redux/contacts/slice';
 import css from './filter.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 
